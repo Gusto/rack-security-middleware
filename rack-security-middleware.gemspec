@@ -1,3 +1,5 @@
+require './lib/rack-security-middleware/version'
+
 Gem::Specification.new do |s|
   s.name = 'rack-security-middleware'
   s.version = RackSecurityMiddleware::VERSION
@@ -7,7 +9,8 @@ Gem::Specification.new do |s|
   s.date = '2021-01-06'
   s.description = 'Middleware collection to secure a Rack application'
   s.email = 'open-source@gusto.com'
-  s.extra_rdoc_files = %w(README)
+  s.homepage = 'https://rubygems.org/gems/rack-security-middleware'
+  s.license = 'MIT'
 
   s.files = Dir[File.join('lib', '**', '*')]
   s.test_files = Dir[File.join('spec', '**', '*')]
