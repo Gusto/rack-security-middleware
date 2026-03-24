@@ -1,0 +1,28 @@
+steps:
+  - label: ":toolbox:"
+    key: "buildkite-builder"
+    timeout_in_minutes: 3
+    agents:
+      queue: "pipeline"
+    retry:
+      automatic:
+        - exit_status: 255
+          limit: 2
+        # SIGTERM
+        - exit_status: 143
+          limit: 2
+        # Buildkite agent lost
+        - exit_status: -1
+          limit: 2
+        # Linux Command Timeout
+        - exit_status: 124
+          limit: 2
+        # Maybe Git clone issue
+        - exit_status: 128
+          limit: 2
+    plugins:
+      - ssh://git@github.com/buildkite-plugins/docker-buildkite-plugin.git#v5.11.0:
+          image: "226779328744.dkr.ecr.${AWS_REGION}.amazonaws.com/build-base:v1.109"
+          propagate-environment: true
+          mount-buildkite-agent: true
+          mount-ssh-agent: true
