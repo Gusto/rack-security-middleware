@@ -21,6 +21,11 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'actionpack', '~> 5.2'
   s.add_development_dependency 'activesupport', '~> 5.2'
+  s.add_development_dependency 'base64'
+  s.add_development_dependency 'bigdecimal'
+  s.add_development_dependency 'drb'
+  s.add_development_dependency 'logger'
+  s.add_development_dependency 'mutex_m'
   s.add_development_dependency 'pry-byebug'
   s.add_development_dependency 'rack-test', "~> 1.0"
   s.add_development_dependency 'rake', "~> 12.3"
