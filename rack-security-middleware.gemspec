@@ -19,8 +19,8 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.summary = 'Middleware collection to secure a Rack application'
 
-  s.add_development_dependency 'actionpack', '~> 5.2'
-  s.add_development_dependency 'activesupport', '~> 5.2'
+  s.add_development_dependency 'actionpack', '~> 8.1'
+  s.add_development_dependency 'activesupport', '~> 8.1'
   s.add_development_dependency 'base64'
   s.add_development_dependency 'bigdecimal'
   s.add_development_dependency 'drb'
