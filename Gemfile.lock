@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rack-security-middleware (0.0.1)
+    rack-security-middleware (0.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -178,7 +178,7 @@ CHECKSUMS
   pry-byebug (3.12.0) sha256=594e094ae8a8390a7ad4c7b36ae36e13304ed02664c67417d108dc5f7213d1b7
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
   rack (2.2.22) sha256=c5cf0b7f872559966d974abe3101a57d51caf12504ee76290b98720004f64542
-  rack-security-middleware (0.0.1)
+  rack-security-middleware (0.0.2)
   rack-session (1.0.2) sha256=a02115e5420b4de036839b9811e3f7967d73446a554b42aa45106af335851d76
   rack-test (1.1.0) sha256=154161f40f162b1c009a655b7b0c5de3a3102cc6d7d2e94b64e1f46ace800866
   rails-dom-testing (2.3.0) sha256=8acc7953a7b911ca44588bf08737bc16719f431a1cc3091a292bca7317925c1d

@@ -9,7 +9,7 @@ module RackSecurityMiddleware
 
     def call(env)
       if has_path_traversal?(env['PATH_INFO'])
-        [403, { 'Content-Type' => 'text/html' }, ['Forbidden']]
+        [403, { 'content-type' => 'text/html' }, ['Forbidden']]
       else
         @app.call env
       end
