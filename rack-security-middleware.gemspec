@@ -29,6 +29,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'ostruct'
   s.add_development_dependency 'pry-byebug'
   s.add_development_dependency 'rack-test', "~> 1.0"
-  s.add_development_dependency 'rake', "~> 12.3"
-  s.add_development_dependency 'rspec', '~> 3.1.0'
+  s.add_development_dependency 'rake', ">= 12.3"
+  s.add_development_dependency 'rspec', '~> 3.13'
 end
